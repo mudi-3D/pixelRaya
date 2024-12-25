@@ -34,7 +34,7 @@ class PixelMudi {
     /** Métodpo para saber que modelo está siendo visitado ✅*/
     setModel() {
         const model = new URLSearchParams(location.search).get('raya');
-        model == '' ? this.model = 'negro' : this.model = model;
+        (model == '' || !model ) ? this.model = 'negro' : this.model = model;
     };
 
     /** Método para saber si descargaron el PDF  ✅*/
