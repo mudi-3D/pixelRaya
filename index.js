@@ -97,6 +97,8 @@ class PixelMudi {
                 console.error('Fetch failed:', error);
             });
 
+            e.preventDefault();
+
         });
 
     };
